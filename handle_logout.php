@@ -1,7 +1,7 @@
 <?php
 // Start the session
 session_start();
-
+include 'connection.php';
 // Unset all of the session variables
 $_SESSION = [];
 

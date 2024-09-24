@@ -1,24 +1,11 @@
 <?php
 // Start session to check if the user is logged in
 session_start();
-
+include 'connection.php';
 // Check if the user is logged in
 if (!isset($_SESSION['account_id'])) {
     header("Location: login.php"); // Redirect to login page if not logged in
     exit;
-}
-
-$servername = "localhost";
-$username = "root"; 
-$password = "";     
-$dbname = "tcc_project"; 
-
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
 }
 
 // Fetch product list from the database

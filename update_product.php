@@ -1,7 +1,7 @@
 <?php
 // Start session to check if the user is logged in
 session_start();
-
+include 'connection.php';
 // Check if the user is logged in
 if (!isset($_SESSION['account_id'])) {
     echo "You are not authorized to perform this action.";

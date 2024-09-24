@@ -1,5 +1,6 @@
 <?php
 session_start();
+include 'connection.php';
 if (!isset($_SESSION['account_id'])) {
     header("Location: login.php");
     exit;
