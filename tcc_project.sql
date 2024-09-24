@@ -68,6 +68,7 @@ INSERT INTO `product` (`prod_id`, `prod_name`, `prod_description`, `prod_status`
 (7, 'AI Personal Assistant', 'A compact device that helps you manage your daily tasks and schedules.', 'active', 10),
 (8, 'Gaming Console X', 'The latest gaming console that offers stunning graphics and an extensive game library.', 'active', 20),
 (9, 'Solar-Powered Backpack', 'A backpack equipped with solar panels to charge your devices on the go.', 'active', 35),
+(9, 'Liew Zhao Lun', '6 years old Bastard', 'inactive', 0),
 (11, 'Ding Zhen Man', 'A very loyal dog - Border Collie. Buy before sold out!!', 'active', 999999);
 
 --
