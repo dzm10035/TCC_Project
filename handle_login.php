@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: dashboard.php"); // Redirect to the dashboard
             exit;
         } else {
-            // Invalid password
-            echo $input_password;
-            echo $user['account_password'];
-            echo $_SESSION['account_id'];
+            // Invalid password: show alert and redirect back to the index
+            echo "<script>alert('Invalid password. Please try again.');</script>";
+            echo "<script>window.location.href = 'index.php';</script>";
+            exit;
         }
     } else {
         // Invalid username
