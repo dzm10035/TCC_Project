@@ -8,20 +8,6 @@ if (!isset($_SESSION['account_id'])) {
     exit;
 }
 
-// Database connection
-$servername = "localhost";
-$username = "root"; 
-$password = "";     
-$dbname = "tcc_project"; 
-
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 // Handle AJAX request to update the product
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $prod_id = intval($_POST['prod_id']);

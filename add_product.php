@@ -6,18 +6,6 @@ if (!isset($_SESSION['account_id'])) {
     exit;
 }
 
-// Database connection
-$servername = "localhost";
-$username = "root"; 
-$password = "";     
-$dbname = "tcc_project"; 
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 // Prepare and bind
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $prod_name = $_POST['prod_name'];
